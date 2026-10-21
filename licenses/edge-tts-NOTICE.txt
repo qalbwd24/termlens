@@ -1,0 +1,21 @@
+TermLens Edge speech adapter
+
+src/EdgeSpeech.cs implements the Edge Read Aloud protocol with reference to:
+https://github.com/rany2/edge-tts
+Copyright (c) rany and edge-tts contributors.
+
+The referenced implementation is licensed under LGPL version 3.
+The TermLens C# adaptation is supplied under LGPL version 3 as well.
+See edge-tts-LICENSE.txt and GPL-3.0.txt in this directory.
+
+Changes: native .NET WebSocket transport, bounded complete-MP3 synthesis,
+Windows proxy support, cancellation, and integration with TermLens audio cache.
+No Python runtime or user's Microsoft signing credentials are included.
+
+The editable adapter source is src/EdgeSpeech.cs. The local source checkout
+includes build.ps1 and the application source needed to rebuild this combined
+work. A future binary distribution must preserve these notices and supply the
+corresponding source/relinking materials required by the license.
+
+This community protocol client is not an official Azure Speech SDK. Availability
+of the online service is independent of this software's source-code license.

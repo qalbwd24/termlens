@@ -1,0 +1,26 @@
+# ---- build output (rebuildable with build.ps1) ----
+TermLens.exe
+TermLens-*.exe
+*.exe
+*.pdb
+
+# ---- DLLs copied to the exe root by build.ps1; the originals live in lib/ ----
+/WpfMath.dll
+/XamlMath.Shared.dll
+
+# ---- USER DATA: history database, settings, DPAPI API key, sessions ----
+# Never version these. Losing them cannot be undone from git.
+data/
+
+# ---- test output ----
+tests/
+formula-*-debug.png
+quote-focus-debug.txt
+
+# ---- misc generated ----
+*.log
+*.tmp-*
+*.bak
+wpf-preview*.png
+*-render*.png
+ui-shot*.png
